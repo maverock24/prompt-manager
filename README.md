@@ -1,4 +1,4 @@
-# OWASP Security Prompt Library for pi
+# Prompt Manager for pi
 
 A **general-purpose prompt manager** extension for pi coding agent that ships with a comprehensive OWASP Top 10 security audit prompt library. Add new prompts by committing `.md` files to the `prompts/` directory — all clients get them on `pi update`.
 
@@ -29,7 +29,7 @@ A **general-purpose prompt manager** extension for pi coding agent that ships wi
 ## Install
 
 ```bash
-pi install git:github.com/maverock24/owasp-security
+pi install git:github.com/maverock24/prompt-manager
 ```
 
 ## Add New Prompts

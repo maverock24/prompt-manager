@@ -1,7 +1,7 @@
 {
-  "name": "owasp-security",
+  "name": "prompt-manager",
   "version": "1.0.0",
-  "description": "OWASP Top 10 security audit prompts and tools for pi coding agent — evidence-driven, assumption-critical security reviews",
+  "description": "General-purpose prompt manager for pi coding agent — ships with OWASP Top 10 security audit prompts. Add prompts via git commits, all clients update instantly.",
   "keywords": ["pi-package", "security", "owasp", "audit", "web-security"],
   "author": "maverock24",
   "license": "MIT",
