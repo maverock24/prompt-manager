@@ -1,0 +1,13 @@
+{
+  "name": "owasp-security",
+  "version": "1.0.0",
+  "description": "OWASP Top 10 security audit prompts and tools for pi coding agent — evidence-driven, assumption-critical security reviews",
+  "keywords": ["pi-package", "security", "owasp", "audit", "web-security"],
+  "author": "maverock24",
+  "license": "MIT",
+  "pi": {
+    "extensions": ["./extensions"],
+    "prompts": ["./prompts"],
+    "image": "https://img.shields.io/badge/OWASP-Top%2010-blue"
+  }
+}
