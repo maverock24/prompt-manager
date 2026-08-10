@@ -313,13 +313,12 @@ export default function promptManager(pi: ExtensionAPI) {
       const found = prompts.find((p) => p.slug === slug);
       const title = found?.title ?? slug;
 
-      pi.sendUserMessage(
+      ctx.ui.setEditorText(
         `Run the following security audit:\n\n# ${title}\n\n${content}\n\n---\n${CRITICAL_THINKING_PREAMBLE}`,
       );
-      ctx.ui.notify(`Loaded: ${title}`, "info");
+      ctx.ui.notify(`Loaded into editor — modify and press Enter: ${title}`, "info");
     },
   });
-
   // ── Command: /prompt <name> ─────────────────────────────────────────────
 
   pi.registerCommand("prompt", {
@@ -355,13 +354,12 @@ export default function promptManager(pi: ExtensionAPI) {
       const found = prompts.find((p) => p.slug === slug);
       const title = found?.title ?? slug;
 
-      pi.sendUserMessage(
+      ctx.ui.setEditorText(
         `Run the following security audit:\n\n# ${title}\n\n${content}\n\n---\n${CRITICAL_THINKING_PREAMBLE}`,
       );
-      ctx.ui.notify(`Loaded: ${title}`, "info");
+      ctx.ui.notify(`Loaded into editor — modify and press Enter: ${title}`, "info");
     },
   });
-
   // ── Session Start: preload cache ────────────────────────────────────────
 
   pi.on("session_start", async () => {
