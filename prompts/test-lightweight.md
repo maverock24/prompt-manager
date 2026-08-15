@@ -5,7 +5,25 @@ description: Write tests that are cheap to run, easy to maintain, and resistant 
 
 # Lightweight Tests — Fast, Focused, Non-Brittle
 
-Write lightweight tests for [FUNCTION / COMPONENT]. Lightweight means: fast to run, easy to understand, cheap to change, and worth the maintenance cost. Every test must earn its place.
+Write lightweight tests for the target function or component. Lightweight means: fast to run, easy to understand, cheap to change, and worth the maintenance cost. Every test must earn its place.
+
+## Input
+
+Fill in the fields below, then run the steps.
+
+**Function / component to test:**
+
+```
+[FUNCTION / COMPONENT]
+```
+
+**Code to test:**
+
+```
+[PASTE CODE HERE]
+```
+
+---
 
 ## Principles
 
@@ -80,7 +98,4 @@ After writing tests, verify:
 - "Are any tests testing the same behavior through different inputs? Parameterize instead of duplicating."
 - "Could I delete 20% of these tests and still catch 95% of bugs? If yes, do it."
 
-## Code to Test
-```
-[PASTE CODE HERE]
-```
+

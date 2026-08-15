@@ -5,7 +5,25 @@ description: Given existing tests, discover edge cases, boundary conditions, and
 
 # Edge Case Discovery — Find What You Missed
 
-Given the existing tests below, discover edge cases that are NOT covered. Your job is to find the cracks — the scenarios that would break the code but aren't tested.
+Given the existing tests provided in the Input section, discover edge cases that are NOT covered. Your job is to find the cracks — the scenarios that would break the code but aren't tested.
+
+## Input
+
+Fill in the fields below, then run the process.
+
+**Existing tests:**
+
+```
+[PASTE EXISTING TEST FILE(S) HERE]
+```
+
+**Implementation code being tested:**
+
+```
+[PASTE THE CODE BEING TESTED HERE]
+```
+
+---
 
 ## Process
 
@@ -66,12 +84,4 @@ Before outputting, ask:
 - "Could I delete half of these and still catch 90% of the bugs? If yes, I'm proposing too many."
 - "Did I mark everything as 'Critical'? Re-evaluate — true criticals should be rare."
 
-## Existing Tests
-```
-[PASTE EXISTING TEST FILE(S) HERE]
-```
 
-## Implementation (for reference)
-```
-[PASTE THE CODE BEING TESTED HERE]
-```

@@ -314,7 +314,7 @@ export default function promptManager(pi: ExtensionAPI) {
       const title = found?.title ?? slug;
 
       ctx.ui.setEditorText(
-        `Run the following security audit:\n\n# ${title}\n\n${content}\n\n---\n${CRITICAL_THINKING_PREAMBLE}`,
+        `Run the following task:\n\n# ${title}\n\n${content}\n\n---\n${CRITICAL_THINKING_PREAMBLE}`,
       );
       ctx.ui.notify(`Loaded into editor — modify and press Enter: ${title}`, "info");
     },
@@ -355,7 +355,7 @@ export default function promptManager(pi: ExtensionAPI) {
       const title = found?.title ?? slug;
 
       ctx.ui.setEditorText(
-        `Run the following security audit:\n\n# ${title}\n\n${content}\n\n---\n${CRITICAL_THINKING_PREAMBLE}`,
+        `Run the following task:\n\n# ${title}\n\n${content}\n\n---\n${CRITICAL_THINKING_PREAMBLE}`,
       );
       ctx.ui.notify(`Loaded into editor — modify and press Enter: ${title}`, "info");
     },

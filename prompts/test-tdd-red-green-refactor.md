@@ -5,7 +5,26 @@ description: Test-Driven Development workflow: write failing tests first, then i
 
 # TDD — Red-Green-Refactor with AI
 
-Guide me through building [FEATURE] using strict Test-Driven Development. Tests are written FIRST — no implementation code before the test exists and fails.
+Guide me through building the target feature using strict Test-Driven Development. Tests are written FIRST — no implementation code before the test exists and fails.
+
+## Input
+
+Fill in the fields below, then start the cycle.
+
+**Feature to build:**
+
+```
+[DESCRIBE FEATURE HERE]
+```
+
+**Test framework and test file path:**
+
+```
+Framework: [Jest / Pytest / Vitest / etc.]
+Test file: [e.g., src/__tests__/feature.test.ts]
+```
+
+---
 
 ## The Cycle (Repeat for Each Small Increment)
 
@@ -44,8 +63,4 @@ Guide me through building [FEATURE] using strict Test-Driven Development. Tests 
 - "Is this the simplest test that drives the next increment, or am I testing too much at once?"
 - "Am I writing implementation code before the test? Stop and write the test first."
 
-## Framework
-Use [Jest / Pytest / Vitest / etc.]. Specify the file paths for tests ([e.g., `src/__tests__/feature.test.ts`]).
 
-## Starting Point
-The feature I need to build: [DESCRIBE FEATURE HERE]

@@ -5,7 +5,25 @@ description: Generate unit tests BEFORE writing any implementation. Prioritize u
 
 # Unit Tests First — Write Tests Before Code
 
-I need unit tests for [FUNCTION / COMPONENT / MODULE]. **Write the tests FIRST.** Do NOT write implementation code — only tests that define the expected behavior.
+I need unit tests for the target unit. **Write the tests FIRST.** Do NOT write implementation code — only tests that define the expected behavior.
+
+## Input
+
+Fill in the fields below, then run the steps.
+
+**Unit under test — function, component, or module:**
+
+```
+[FUNCTION / COMPONENT / MODULE]
+```
+
+**Specification — function signature, component props, or feature description:**
+
+```
+[PASTE FUNCTION SIGNATURE, COMPONENT PROPS, OR FEATURE DESCRIPTION HERE]
+```
+
+---
 
 ## Test Generation Process
 
@@ -64,7 +82,4 @@ Answer honestly:
 - "Did I test the truly dangerous edge cases, or just the convenient ones?"
 - "Are any tests redundant — testing the same behavior through different paths? Delete them."
 
-## Specification
-```
-[PASTE FUNCTION SIGNATURE, COMPONENT PROPS, OR FEATURE DESCRIPTION HERE]
-```
+

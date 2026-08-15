@@ -5,7 +5,19 @@ description: Write integration tests for component interaction, data flow across
 
 # Integration Tests — Test the Seams
 
-Write integration tests for [FEATURE / FLOW]. Integration tests verify that multiple components work together correctly. They test the SEAMS — the boundaries between units where bugs hide.
+Write integration tests for the target feature or flow. Integration tests verify that multiple components work together correctly. They test the SEAMS — the boundaries between units where bugs hide.
+
+## Input
+
+Fill in the field below, then run the steps.
+
+**Feature / flow to test — components and data flow involved:**
+
+```
+[DESCRIBE THE FEATURE / FLOW AND COMPONENTS INVOLVED]
+```
+
+---
 
 ## When to Write Integration Tests
 - After unit tests cover individual components
@@ -68,7 +80,4 @@ After writing, verify:
 - "Will this test break when I refactor internal implementation, or only when behavior changes? It should only break on behavior changes."
 - "Am I testing the framework or my code? Spring Boot's `@Transactional` works — test YOUR transactional logic, not Spring's."
 
-## Flow to Test
-```
-[DESCRIBE THE FLOW AND COMPONENTS INVOLVED]
-```
+

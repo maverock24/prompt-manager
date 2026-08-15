@@ -5,7 +5,25 @@ description: Analyze current test coverage, find critical gaps, and create a pri
 
 # Improve Test Coverage — Audit & Strategy
 
-Analyze the test coverage for [MODULE / PROJECT] and create a prioritized plan to improve it. Coverage percentage alone is meaningless — we need coverage where bugs actually happen.
+Analyze the current test coverage and create a prioritized plan to improve it. Coverage percentage alone is meaningless — we need coverage where bugs actually happen.
+
+## Input
+
+Fill in the fields below, then run the phases.
+
+**Target — module or project to audit:**
+
+```
+[MODULE / PROJECT]
+```
+
+**Current test state — coverage report or description:**
+
+```
+[PASTE COVERAGE REPORT OR DESCRIBE CURRENT TEST STATE]
+```
+
+---
 
 ## Phase 1: Coverage Audit
 
@@ -69,7 +87,4 @@ Before finalizing the plan, challenge it:
 - "Am I testing the framework or my code? Testing that Express routes work is a waste — test YOUR route handlers."
 - "Could any of these tests be deleted without meaningfully reducing bug detection? If yes, they're noise."
 
-## Current State
-```
-[PASTE COVERAGE REPORT OR DESCRIBE CURRENT TEST STATE]
-```
+

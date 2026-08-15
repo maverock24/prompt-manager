@@ -5,7 +5,19 @@ description: Critically audit existing tests for actual value. Identify tests th
 
 # Test Value Audit — Are These Tests Worth It?
 
-Perform a critical audit of the test suite for [MODULE / PROJECT]. Not all tests are created equal. Some tests cost more in maintenance than they save in bug prevention. This audit identifies tests that should be rewritten, removed, or kept.
+Perform a critical audit of the target test suite. Not all tests are created equal. Some tests cost more in maintenance than they save in bug prevention. This audit identifies tests that should be rewritten, removed, or kept.
+
+## Input
+
+Fill in the field below, then run the audit.
+
+**Scope — which test files to audit:**
+
+```
+[DESCRIBE WHICH TEST FILES TO AUDIT, OR "ALL TESTS"]
+```
+
+---
 
 ## The Uncomfortable Questions
 
@@ -103,7 +115,4 @@ Before submitting, ask yourself:
 - "If I had to cut the test suite in half, which tests would I keep? Start there."
 - "Do my DELETE recommendations actually remove safety, or just remove noise?"
 
-## Scope
-```
-[DESCRIBE WHICH TEST FILES TO AUDIT, OR "ALL TESTS"]
-```
+
