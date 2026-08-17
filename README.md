@@ -1,6 +1,6 @@
 # Prompt Manager for pi
 
-A **general-purpose prompt manager** extension for pi coding agent that ships with OWASP Top 10 security audit prompts and a testing prompt library for building new code and reviewing existing branches. Add new prompts by committing `.md` files to the `prompts/` directory — all clients get them on `pi update`.
+A **general-purpose prompt manager** extension for pi coding agent that ships with OWASP Top 10 security audit prompts, a testing prompt library, and a research-report prompt. Add new prompts by committing `.md` files to the `prompts/` directory — all clients get them on `pi update`.
 
 ## Features
 
@@ -46,6 +46,19 @@ Testing prompts serve two contexts:
 | Improve Test Coverage | Find critical coverage gaps and prioritize fixes |
 | Edge Case Discovery | Find boundary conditions and failure modes tests miss |
 | Test Value Audit | Identify tests that provide false confidence or cost more than they save |
+| TDD on Existing Code | Characterize current behavior, then refactor or extend with a red-green-refactor safety net |
+
+## Code Review Prompts
+
+| Prompt | Focus |
+|--------|-------|
+| MR Code Review | Evidence-based GitLab merge request review — severity + confidence labels, execution tracing, false-positive discipline, and an APPROVE / REQUEST CHANGES / REVISE verdict |
+
+## Research Prompts
+
+| Prompt | Focus |
+|--------|-------|
+| Research Report | Research a topic via SearXNG and produce a self-contained HTML infographic report (5000+ words) with footnoted sources, a source list, and a glossary |
 
 ## Prompt Input Placeholders
 
@@ -79,4 +92,4 @@ Review the codebase for...
 
 Every prompt automatically includes this preamble in the system prompt:
 
-> **Before answering:** Challenge your own assumptions. Do not move forward without concrete evidence. If you're unsure about something, explicitly state what you need to verify rather than guessing. Prefer reading actual code/files over relying on memory of how a framework "usually" works. Cite exact file paths and line numbers for every finding.
+> **Before answering:** Challenge your own assumptions. Do not move forward without concrete evidence. If you're unsure about something, explicitly state what you need to verify rather than guessing. Prefer reading actual code/files over relying on memory of how a framework "usually" works. Cite exact file paths and line numbers for every finding. Research the current docs for the frameworks and packages in use so version and API information is up to date. Keep implementation simple — the simplest solution that meets the requirements is always the best.

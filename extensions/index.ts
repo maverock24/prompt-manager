@@ -44,6 +44,9 @@ Before answering, you MUST:
 3. **Cite concrete proof.** Every finding must include exact file paths and line numbers.
 4. **State uncertainty explicitly.** If you're unsure, say "I need to verify X by reading Y" — do NOT proceed without evidence.
 5. **Do not move too fast.** Take the time to actually inspect the code. A thorough slow review is better than a fast sloppy one.
+6. **Research the tech stack first.** Before proposing a solution, look up the current documentation for the frameworks, libraries, and packages in use — latest versions, current APIs, breaking changes. Never rely on stale or memorized version info.
+
+**Simplicity is always a top priority.** Prefer the simplest implementation that satisfies the requirements. Avoid over-engineering, premature abstraction, and speculative generality.
 `.trim();
 
 // ─── Prompt Discovery ────────────────────────────────────────────────────────
@@ -200,11 +203,11 @@ export default function promptManager(pi: ExtensionAPI) {
     name: "list_prompts",
     label: "List Prompts",
     description:
-      "List all available security audit and code review prompt templates. Use this to discover what prompts are available before loading one.",
+      "List all available prompt templates. Use this to discover what prompts are available before loading one.",
     promptSnippet: "List available prompt templates in the prompt library",
     promptGuidelines: [
-      "Use list_prompts to discover available security audit prompts before loading one with load_prompt.",
-      "Call list_prompts when the user asks 'what security audits are available' or 'what prompts do you have'.",
+      "Use list_prompts to discover available prompts before loading one with load_prompt.",
+      "Call list_prompts when the user asks 'what prompts do you have' or 'what templates are available'.",
     ],
     parameters: Type.Object({}),
     async execute() {
@@ -240,13 +243,13 @@ export default function promptManager(pi: ExtensionAPI) {
     label: "Load Prompt",
     description:
       "Load a specific prompt template by its slug name. Use list_prompts first to see available prompts. The loaded prompt will guide your next steps.",
-    promptSnippet: "Load a specific prompt template (e.g. owasp-full, owasp-01-broken-access-control)",
+    promptSnippet: "Load a specific prompt template (e.g. owasp-full, test-tdd-existing-codebase)",
     promptGuidelines: [
-      "Use load_prompt when the user asks you to run a specific security audit or code review.",
+      "Use load_prompt when the user asks you to run a specific task, audit, or workflow from the prompt library.",
       "Always call list_prompts first if you're unsure what prompts are available.",
     ],
     parameters: Type.Object({
-      slug: Type.String({ description: "Prompt slug to load, e.g. 'owasp-full' or 'owasp-03-injection'" }),
+      slug: Type.String({ description: "Prompt slug to load, e.g. 'owasp-full' or 'test-tdd-existing-codebase'" }),
     }),
     async execute(_toolCallId, params) {
       const prompts = await ensureCache();
