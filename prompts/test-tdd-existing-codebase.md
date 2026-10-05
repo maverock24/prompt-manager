@@ -1,6 +1,6 @@
 ---
 title: TDD on Existing Code — Red-Green-Refactor with a Safety Net
-description: Apply TDD to an existing, often untested codebase: characterize current behavior, lock it in with tests, then refactor or extend using red-green-refactor. No single feature required — works across the whole repo.
+description: "Apply TDD to an existing, often untested codebase: characterize current behavior, lock it in with tests, then refactor or extend using red-green-refactor. No single feature required — works across the whole repo."
 ---
 
 # TDD on Existing Code — Red-Green-Refactor with a Safety Net

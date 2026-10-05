@@ -1,6 +1,6 @@
 ---
 title: TDD — Red-Green-Refactor with AI
-description: Test-Driven Development workflow: write failing tests first, then implement, then refactor — assisted by AI but driven by tests.
+description: "Test-Driven Development workflow: write failing tests first, then implement, then refactor — assisted by AI but driven by tests."
 ---
 
 # TDD — Red-Green-Refactor with AI
