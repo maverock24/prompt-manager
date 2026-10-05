@@ -1,3 +1,10 @@
 node_modules/
 .DS_Store
 *.log
+
+# Local secrets and machine-specific files - never commit real values
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
